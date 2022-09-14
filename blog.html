@@ -68,18 +68,31 @@
                 <div class="card-body">
                     <h2 class="card-title">What is Event Loop in JavaScript?</h2>
                     <p>
-                        Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it
-                        receives more tasks. The event loop executes tasks from the event queue only when the call stack
-                        is empty i.e. there is no ongoing task. The event loop allows us to use callbacks and promises.
+                        The event loop is what allows javascript to handle thousands and thousands of requests with just
+                        a single thread. This architecture allows Javascript and/or Node.js engines to offload
+                        operations to the system kernel.Event Loop’s job is to watch Callback Queue and Call Stack,
+                        whenever Call Stack is empty and we have called in Callback Queue. The event loop will move
+                        calls to Call Stack and execute them in succession.
                     </p>
                 </div>
             </div>
             <div class="card  bg-base-100 shadow-xl mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">What is Event Lopp in JavaScript?</h2>
+                    <h2 class="card-title">How many ways to find undefined in javaScript?</h2>
                     <p>
-
+                        <strong>8 ways to get Undefine</strong>
                     </p>
+                    <ul>
+                        <li>1. variable that is not initialized will give undefined.</li>
+                        <li>2. function with no return.</li>
+                        <li>3. parameter that is not passed will be undefined
+                            .</li>
+                        <li>4. if return has nothing on the right side will return undefined.</li>
+                        <li>5. property that doesn't exists on an object will give you undefined.</li>
+                        <li>6. accessing array elements outside of the index range.</li>
+                        <li>7. deleting an element inside an array.</li>
+                        <li>8. set a value directly to undefined.</li>
+                    </ul>
                 </div>
             </div>
 
