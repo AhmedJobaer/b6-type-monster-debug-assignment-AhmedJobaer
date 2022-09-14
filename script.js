@@ -70,7 +70,7 @@ const gameOver = () => {
   const timeTaken = (finishTime - startTime) / 1000;
 
   // show result modal
-  resultModal.innerHTML = "";
+  resultModal.innerHTML = " ";
   resultModal.classList.toggle("hidden");
   modalBackground.classList.toggle("hidden");
   // clear user text
@@ -78,7 +78,7 @@ const gameOver = () => {
   // make it inactive
   display.classList.add("inactive");
   // show result
-  resultModal.innerHTML += `
+  resultModal.innerHTML = `
     <h1>Finished!</h1>
     <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
     <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
@@ -113,7 +113,7 @@ const start = () => {
     if (count == 0) {
       // -------------- START TYPING -----------------
       document.addEventListener("keydown", typeController);
-      countdownOverlay.style.display = "flex";
+      countdownOverlay.style = "flex";
       display.classList.remove("inactive");
 
       clearInterval(startCountdown);
