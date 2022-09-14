@@ -13,18 +13,14 @@
 <body class="w-4/5 mx-auto">
 
     <header>
-        <div class="navbar bg-base-100">
-            <div class="flex-1">
-                <a class="btn btn-ghost normal-case text-xl">News Spider</a>
-            </div>
+        <div class="navbar  flex justify-center text-2xl ">
             <div class="flex-none gap-2">
                 <div class="flex-none">
                     <ul class="menu menu-horizontal p-0">
-                        <li><a href="index.html" target="_blank">News</a></li>
+                        <li><a href="index.html" target="_blank">Speed Typer</a></li>
                         <li><a href="#">Blogs</a></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </header>
@@ -33,72 +29,51 @@
         <section>
             <div class="card  bg-base-100 shadow-xl mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">What is the difference between var, let and const?</h2>
-                    <ul class="ml-4">
-                        <li>1. var declarations are globally scoped or function scoped while let and const are block
-                            scoped.</li>
-                        <li>2. var variables can be updated and re-declared within its scope; let variables can be
-                            updated but not re-declared; const variables can neither be updated nor re-declared.</li>
-                        <li>3. They are all hoisted to the top of their scope. But while var variables are initialized
-                            with undefined, let and const variables are not initialized.</li>
-                        <li>4. While var and let can be declared without being initialized, const must be initialized
-                            during declaration.</li>
-                    </ul>
+                    <h2 class="card-title">What is the difference between local storage and session storage?</h2>
+                    <p>LocalStorage and sessionStorage are relatively new APIs (meaning, not all legacy browsers will
+                        support them) and are near identical (both in APIs and capabilities) with the sole exception of
+                        persistence. sessionStorage (as the name suggests) is only available for the duration of the
+                        browser session (and is deleted when the tab or window is closed) - it does, however, survive
+                        page reloads (source DOM Storage guide - Mozilla Developer Network).
+                    </p>
+                    <p>
+                        Clearly, if the data you are storing needs to be available on an ongoing basis then localStorage
+                        is preferable to sessionStorage - although you should note both can be cleared by the user so
+                        you should not rely on the continuing existence of data in either case.
+                    </p>
+                    <p>
+                        LocalStorage and sessionStorage are perfect for persisting non-sensitive data needed within
+                        client scripts between pages (for example: preferences, scores in games). The data stored in
+                        localStorage and sessionStorage can easily be read or changed from within the client/browser so
+                        should not be relied upon for storage of sensitive or security-related data within applications.
+                    </p>
                 </div>
             </div>
             <div class="card  bg-base-100 shadow-xl mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">What is the difference between arrow function and regular function?</h2>
-                    <p>Arrow functions have been adopted since ECMAScript 2015, and it's a simple yet very powerful
-                        feature. However, an arrow function isn't the same as a normal function. Then what's different?
-                    </p>
-                    <p>JavaScript arrow functions are roughly the equivalent of lambda functions in python or blocks in
-                        Ruby, but they have more intricate details. Arrow functions allow a developer to accomplish the
-                        same result with fewer lines of code and approximately half the typing.
-
-                    </p>
-                    <ul class="ml-4">
-                        <li>1. Unlike regular functions, arrow functions don't have their own this or arguments binding.
-                            Instead, those identifiers are resolved in the lexical scope like any other variable.
-
-                        </li>
-                        <li>2. Regular functions created through function declarations / expressions are both
-                            constructible and callable. On the otherhand, Arrow functions (and methods) are only
-                            callable i.e arrow functions can never be used as constructor functions. Hence, they can
-                            never be invoked with the new keyword.
-                        </li>
-
-                        <li>3. In a traditional function, there is an arguments local variable. If the number of
-                            arguments to our function is dynamic, using arguments allows us to easily do things like
-                            calculating the maximum number of passed arguments. Besides, In the arrow function, there
-                            are no arguments, if we access arguments in the arrow function will return the arguments of
-                            the closest non-arrow parent function.
-                        </li>
-                    </ul>
+                    <h2 class="card-title">What is the difference between Global scope and Block scope?</h2>
 
                 </div>
             </div>
 
             <div class="card  bg-base-100 shadow-xl mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">Why should we use templete string?</h2>
-                    <p>Template strings are a powerful feature of modern JavaScript released in ES6. It lets us
-                        insert/interpolate variables and expressions into strings without needing to concatenate like in
-                        older versions of JavaScript. It allows us to create strings that are complex and contain
-                        dynamic elements. Another great thing that comes with template strings are tags. Tags are
-                        functions that take a string and the decomposed parts of the string as parameters and are great
-                        for converting strings to different entities.
+                    <h2 class="card-title">What is Event Lopp in JavaScript?</h2>
+                    <p>
+
+                    </p>
+                </div>
+            </div>
+            <div class="card  bg-base-100 shadow-xl mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">What is Event Lopp in JavaScript?</h2>
+                    <p>
 
                     </p>
                 </div>
             </div>
 
-            <!-- <div class="card  bg-base-100 shadow-xl mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">What is the differnce between map, forEach, filter and find?</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                </div>
-            </div> -->
+
         </section>
     </main>
 
